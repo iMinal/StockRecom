@@ -34,17 +34,15 @@
 					<td>Order</td>
 					</tr>
 					
-			  	<tbody ngFor="let stock of stockData">
-						<tr>
-					<td>{{stock.dataset.id.toFixed(2)}}</td>
-					<!--td>{{stock.dataset.name}}</td>
+			  	<!--tr *ngFor="let stock of stockData"-->
+					<td>{{stock.dataset.id}}</td>
+					<td>{{stock.dataset.name}}</td>
 					<td>{{stock.dataset.frequency}}</td>
 					<td>{{stock.dataset.type}}</td>
 					<td>{{stock.dataset.start_date}}</td>
 					<td>{{stock.dataset.end_data}}</td>
-					<td>{{stock.dataset.order}}</td-->
-				 </tr>
-				 </tbody>
+					<td>{{stock.dataset.order}}</td>
+				 <!--/tr-->
 			</table>
 		   
     </div>
